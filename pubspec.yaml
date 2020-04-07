@@ -27,8 +27,19 @@ dependencies:
   english_words: ^3.1.5
 
 dev_dependencies:
+  # 1st add the package
+  flutter_launcher_icons:
+
   flutter_test:
     sdk: flutter
+# 2 configure the app icons 
+flutter_icons:
+  image_path: "assets/images/app_icon.png" # 3 create this path and place your icon in this dir
+  android: true #add icon for android
+  iOS: true #add icon for iOS
+
+  #then run his command to create icons
+  # flutter pub run flutter_launcher_icons:main
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
